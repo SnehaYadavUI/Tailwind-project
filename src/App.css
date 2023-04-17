@@ -40,6 +40,10 @@ font-family: 'Roboto', sans-serif;
   color: #61dafb;
 }
 
+/* .invalid + label{
+  display: block;
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

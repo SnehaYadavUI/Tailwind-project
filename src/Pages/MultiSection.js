@@ -6,6 +6,8 @@ import CardLayout from "../layout/CardLayout";
 import SignUp from "../components/SignUp";
 import Faq from "../components/Faq";
 import ContentOverlayBg from "../components/ContentOverlayBg";
+import FormWithContent from "../components/FormWithContent";
+import UncontroledForm from "../components/UncontroledForm";
 
 const MultiSection = () => {
   return (
@@ -17,6 +19,8 @@ const MultiSection = () => {
         <CardLayout />
         <Faq />
       </div>
+      <FormWithContent />
+      <UncontroledForm />
       <SignUp />
       <TailwindFooter />
     </>

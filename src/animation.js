@@ -71,8 +71,23 @@ export function FadeOneAfterOne({ children }) {
   );
 }
 
-export function fadeInChildren(children) {
-  <motion.div variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
-    {children}
-  </motion.div>;
+export function FadeInUP({ children }) {
+  return (
+    <motion.div
+      variants={{
+        hidden: {
+          opacity: 0,
+          translateY: 50,
+          transitionTimingFunction: "ease-out",
+          duration: 0.6,
+        },
+        show: { opacity: 1, translateY: 0 },
+      }}
+      initial="hidden"
+      viewport={{ once: true }}
+      whileInView="show"
+    >
+      {children}
+    </motion.div>
+  );
 }

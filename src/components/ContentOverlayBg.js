@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FadeInWhenVisible } from "../animation";
 
 const ContentOverlayBg = () => {
   return (
-    <section>
+    <FadeInWhenVisible>
       <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10 lg:py-16">
@@ -42,7 +43,7 @@ const ContentOverlayBg = () => {
           </div>
         </div>
       </div>
-    </section>
+    </FadeInWhenVisible>
   );
 };
 
